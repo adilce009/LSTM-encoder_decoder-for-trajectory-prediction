@@ -5,7 +5,7 @@ import TrajWithNbrs
 import random
 
 
-def acceptable_length(traj):  # frame numbers of some trajectories are not high enough; remove the ones that has smaller number of frames
+def acceptable_length(traj):  # frame numbers of some trajectories are not long enough; remove the ones that has smaller number of frames. I am using (50+125) frames
     obs_len = 50  # 50 frames  equivalent to 2 seconds
     pred_len = 125  # 125 frames equivalent to 5 seconds; 75 frames, equivalent to 3 seconds
     idx = []
