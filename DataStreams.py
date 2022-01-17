@@ -53,24 +53,3 @@ def load_data():
     test_obs, test_label = segment_traj(test)
 
     return train_obs, train_label, test_obs, test_label
-
-
-#a,b,c,d = load_data()
-'''
-def load_batch():p
-    train_obs, train_label, test_obs, test_label = load_data()
-    batch_size = 32
-    # create a set of random integers of size 32,
-    num_sets = int(len(train_obs)/batch_size)
-    random_list = list(range(0,len(train_obs)))
-    random.shuffle(random_list)
-    batched_train_obs = []
-
-    # extract associated samples from both obs and label
-    a.append( random.sample(train_obs, k=batch_size))
-    print(a)
-    return a
-
-a = load_batch()
-
-'''
