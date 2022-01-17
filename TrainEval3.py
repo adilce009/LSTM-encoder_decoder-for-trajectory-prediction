@@ -195,6 +195,9 @@ def MSE ( y_pred , y_gt):
     lossVal = np.sum ( acc , axis=0 ) / len ( acc )
     return lossVal,longitudinal_error, lateral_error
 
+
+trainitres ()
+
 '''
 def scale(train_tensor, target_tensor):
     train_tensor_x = train_tensor[:,:,0].clone()
@@ -218,7 +221,7 @@ def scale(train_tensor, target_tensor):
     train_tensor[:, :, 5] = torch.mean(target_tensor_yA) + (train_tensor_yA - torch.mean(train_tensor_yA)) * ((torch.std(target_tensor_yA) / torch.std(train_tensor_yA)))
     return train_tensor
 '''
-trainitres ()
+
 
 '''
 # call eval()
